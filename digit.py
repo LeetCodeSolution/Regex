@@ -13,7 +13,7 @@ digit[10] = '12e+5.4'
 
 import re
 
-pattern = re.compile('^(\+|\-)?(\d+)(\.\d+)?((?:e|E)(?:\-|\+)?\d+)?$')
+pattern = re.compile('^(?:\+|\-)?(?:\d+)(?:\.\d+)?(?:(?:e|E)(?:\-|\+)?\d+)?$')
 
 for item in digit.values():
     match_result = re.match(pattern, item)
